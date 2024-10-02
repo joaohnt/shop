@@ -73,13 +73,13 @@ public class Order {
 
         sb.append("Order items: " + "\n");
         for(OrderItem c : items) {
-            sb.append(c.getProduct().getName() +", $"+ c.getProduct().getPrice() + ", " +"Quantity: "+c.getProduct().getQuantity() + " Subtotal: $" + c.getProduct().subTotal()+ "\n");
+            sb.append(c.getProduct().getName() +", $"+ c.getProduct().getPrice() + ", " +"Quantity: "+c.getProduct().getQuantity() + " Subtotal: " + c.getProduct().subTotal()+ "\n");
         }
-        int sum = 0;
+        double sum = 0.0;
         for(OrderItem c : items) {
             sum += c.getProduct().subTotal();
         }
-        sb.append("TOTAL PRICE: $"+ sum + "\n");
+        sb.append("TOTAL PRICE: $ "+ sum + "\n");
 
         return sb.toString();
     }
