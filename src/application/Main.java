@@ -53,11 +53,6 @@ public class Main {
             order.addItems(orderItem);
         }
 
-//        System.out.println("ORDER SUMMARY: ");
-//        System.out.println("Order moment: " + sdf2.format(order.getMoment()));
-//        System.out.println("Order status: " + order.getStatus());
-//        System.out.println("Client: " + order.getClient().getName() +" ("+ sdf.format(order.getClient().getBirthDate()) + ") - "+ order.getClient().getEmail());
-//        System.out.println("ORDER ITEMS: ");
         System.out.println(order);
 
     }
